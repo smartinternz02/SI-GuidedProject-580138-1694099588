@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">storage</string>
+    <string name="student_details">Student Details</string>
+    <string name="enter_rollno">Enter rollno:</string>
+    <string name="enter_name">Enter Name:</string>
+    <string name="enter_marks">Enter marks:</string>
+    <string name="insert">INSERT</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
+    <string name="view">VIEW</string>
+    <string name="view_all">VIEW ALL</string>
+</resources>
