@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kfcbackground"
+    tools:context=".KFCActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="2000dp">
+
+                <ImageView
+                    android:id="@+id/kfcsnack"
+                    android:layout_width="395dp"
+                    android:layout_height="276dp"
+                    android:paddingTop="60dp"
+                    android:paddingBottom="60dp"
+                    android:src="@drawable/kfcsnack"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/kfcsnacktext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="KFC Snack"
+                    android:textColor="#070707"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/kfcsnack"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/minusbtn"
+                    android:layout_width="53dp"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/minus"
+                    app:layout_constraintBottom_toBottomOf="@+id/kfcsnack"
+                    app:layout_constraintEnd_toEndOf="@+id/plusbtn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="ContentDescription,MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/inctxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="225dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#050505"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/plusbtn"
+                    app:layout_constraintStart_toEndOf="@+id/minusbtn"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/plusbtn"
+                    android:layout_width="43dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="232dp"
+                    android:src="@drawable/plus"
+                    app:layout_constraintBottom_toBottomOf="@+id/minusbtn"
+                    app:layout_constraintStart_toStartOf="@+id/kfcsnack"
+                    app:layout_constraintTop_toTopOf="@+id/minusbtn"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="ContentDescription" />
+
+                <Button
+                    android:id="@+id/addtocart"
+                    android:layout_width="172dp"
+                    android:layout_height="48dp"
+                    android:text="Add To Cart"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.475"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/kfcsnack"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="392dp"
+                    android:layout_height="1500dp"
+                    app:layout_constraintTop_toBottomOf="@+id/addtocart"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp">
+
+                    <ImageView
+                        android:id="@+id/chickenperiperi"
+                        android:layout_width="393dp"
+                        android:layout_height="350dp"
+                        android:src="@drawable/chickenperiperi"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteY="25dp" />
+
+                    <TextView
+                        android:id="@+id/periperitext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Chicken Peri Peri"
+                        android:textColor="#070707"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/chickenperiperi"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/minusbtn2"
+                        android:layout_width="53dp"
+                        android:layout_height="36dp"
+                        android:layout_marginBottom="16dp"
+                        android:src="@drawable/minus"
+                        app:layout_constraintBottom_toBottomOf="@+id/chickenperiperi"
+                        app:layout_constraintEnd_toEndOf="@+id/plusbtn2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="ContentDescription,MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/inctxt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="296dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#050505"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toStartOf="@+id/plusbtn2"
+                        app:layout_constraintHorizontal_bias="0.473"
+                        app:layout_constraintStart_toEndOf="@+id/minusbtn2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/plusbtn2"
+                        android:layout_width="43dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="232dp"
+                        android:src="@drawable/plus"
+                        app:layout_constraintBottom_toBottomOf="@+id/minusbtn2"
+                        app:layout_constraintStart_toStartOf="@+id/chickenperiperi"
+                        app:layout_constraintTop_toTopOf="@+id/minusbtn2"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:ignore="ContentDescription" />
+
+                    <Button
+                        android:id="@+id/addtocart2"
+                        android:layout_width="172dp"
+                        android:layout_height="48dp"
+                        android:text="Add To Cart"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.475"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/chickenperiperi"
+                        tools:ignore="HardcodedText" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1000dp"
+                        app:layout_constraintTop_toBottomOf="@+id/addtocart2"
+                        tools:layout_editor_absoluteX="0dp">
+
+                        <ImageView
+                            android:id="@+id/smokyredgrilled"
+                            android:layout_width="393dp"
+                            android:layout_height="346dp"
+                            android:src="@drawable/smokyred"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="ContentDescription,MissingConstraints"
+                            tools:layout_editor_absoluteY="330dp" />
+
+                        <TextView
+                            android:id="@+id/smokytext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Cheese Burger"
+                            android:textColor="#070707"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/smokyredgrilled"
+                            tools:ignore="HardcodedText" />
+
+                        <ImageView
+                            android:id="@+id/minusbtn3"
+                            android:layout_width="53dp"
+                            android:layout_height="36dp"
+                            android:layout_marginBottom="16dp"
+                            android:src="@drawable/minus"
+                            app:layout_constraintBottom_toBottomOf="@+id/smokyredgrilled"
+                            app:layout_constraintEnd_toEndOf="@+id/plusbtn3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="ContentDescription,MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/inctxt3"
+                            android:layout_width="6dp"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="304dp"
+                            android:text="0"
+                            android:textAlignment="center"
+                            android:textColor="#050505"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toStartOf="@+id/plusbtn3"
+                            app:layout_constraintHorizontal_bias="0.467"
+                            app:layout_constraintStart_toEndOf="@+id/minusbtn3"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="HardcodedText" />
+
+                        <ImageView
+                            android:id="@+id/plusbtn3"
+                            android:layout_width="43dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="232dp"
+                            android:src="@drawable/plus"
+                            app:layout_constraintBottom_toBottomOf="@+id/minusbtn3"
+                            app:layout_constraintStart_toStartOf="@+id/smokyredgrilled"
+                            app:layout_constraintTop_toTopOf="@+id/minusbtn3"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:ignore="ContentDescription" />
+
+                        <Button
+                            android:id="@+id/addtocart3"
+                            android:layout_width="172dp"
+                            android:layout_height="48dp"
+                            android:text="Add To Cart"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.475"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/smokyredgrilled"
+                            tools:ignore="HardcodedText" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="392dp"
+                            android:layout_height="594dp"
+                            app:layout_constraintTop_toBottomOf="@+id/addtocart3"
+                            tools:layout_editor_absoluteX="0dp">
+
+                            <ImageView
+                                android:id="@+id/doubledowndog"
+                                android:layout_width="393dp"
+                                android:layout_height="346dp"
+                                android:src="@drawable/doubledowndog"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="ContentDescription,MissingConstraints"
+                                tools:layout_editor_absoluteY="330dp" />
+
+                            <TextView
+                                android:id="@+id/doubletext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:text="Spicy Veg Burger"
+                                android:textColor="#070707"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/doubledowndog"
+                                tools:ignore="HardcodedText" />
+
+                            <ImageView
+                                android:id="@+id/minusbtn4"
+                                android:layout_width="53dp"
+                                android:layout_height="36dp"
+                                android:layout_marginBottom="16dp"
+                                android:src="@drawable/minus"
+                                app:layout_constraintBottom_toBottomOf="@+id/doubledowndog"
+                                app:layout_constraintEnd_toEndOf="@+id/plusbtn4"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="ContentDescription,MissingConstraints" />
+
+                            <TextView
+                                android:id="@+id/inctxt4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="304dp"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textColor="#050505"
+                                android:textSize="18sp"
+                                app:layout_constraintEnd_toStartOf="@+id/plusbtn4"
+                                app:layout_constraintHorizontal_bias="0.465"
+                                app:layout_constraintStart_toEndOf="@+id/minusbtn4"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="HardcodedText" />
+
+                            <ImageView
+                                android:id="@+id/plusbtn4"
+                                android:layout_width="43dp"
+                                android:layout_height="36dp"
+                                android:layout_marginStart="232dp"
+                                android:src="@drawable/plus"
+                                app:layout_constraintBottom_toBottomOf="@+id/minusbtn4"
+                                app:layout_constraintStart_toStartOf="@+id/doubledowndog"
+                                app:layout_constraintTop_toTopOf="@+id/minusbtn4"
+                                app:layout_constraintVertical_bias="0.0"
+                                tools:ignore="ContentDescription" />
+
+                            <Button
+                                android:id="@+id/addtocart4"
+                                android:layout_width="172dp"
+                                android:layout_height="48dp"
+                                android:text="Add To Cart"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.475"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/doubledowndog"
+                                tools:ignore="HardcodedText" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

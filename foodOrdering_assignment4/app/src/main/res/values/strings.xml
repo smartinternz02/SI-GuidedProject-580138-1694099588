@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">foodOrdering</string>
+    <string name="welcome_to_the_food_delivery_app_please_signin_to_continue">Welcome to the Food Delivery App Please SignIn to Continue.</string>
+    <string name="signin">SignIn</string>
+    <string name="todo">TODO</string>
+    <string name="search_for_food">Search for food</string>
+    <string name="have_a_good_day">Have a Good Day.</string>
+    <string name="welcome">Welcome!!</string>
+    <string name="login">Login</string>
+    <string name="username_email">Username/Email</string>
+    <string name="password">Password</string>
+    <string name="signIn">SignIn</string>
+    <string name="sign_in_button_description">Sign In Button</string>
+    <string name="gujaratirestaurant">TODO</string>
+    <string name="gujarati_restaurant">Gujarati Restaurant</string>
+    <string name="rajasthani_restaurant">Rajasthani Restaurant</string>
+</resources>
